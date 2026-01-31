@@ -1,0 +1,6 @@
+Para jogar, entre no visualg30 e abra o arquivo do jogo Caracs Fishing.
+Para iniciar o jogo, com o programa aberto, pressione F9.
+Deixe em tela cheia para melhor experiência.
+
+(Obs: dependendo a resolução da tela, pode afetar a disposição dos
+elementos, algo impossível de corrigir diretamente no programa)
