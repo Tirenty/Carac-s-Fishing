@@ -1,6 +1,6 @@
 Algoritmo "Caracs Fishing"
 
-Var                //x// //y
+Var                   //x// //y//
    local_peixes:vetor[0..11,0..7] de caracter
    profundidade, v, pX,pY: inteiro
 
@@ -176,7 +176,6 @@ inicio
          fimse
       fimse
    fimpara
-   meta_atual <- meta_atual + 1
 fimprocedimento
 
 procedimento apresenta_lago
@@ -255,10 +254,6 @@ inicio
     z <- -1
     repita
        z <- z + 1
-       
-       // mexer_peixes_nome[z] <- local_peixes[x,y]
-       // mexer_peixes_posiX[z] <- x
-       // mexer_peixes_posiY[z] <- y
        
        se (mexer_peixes_nome[z] <> "") entao
           se (mexer_peixes_nome[z] = "TIPALINHA") entao
@@ -1188,9 +1183,6 @@ inicio
       
       dr_linha <- dr_linha - 1
       
-      //mexer_peixes_nome[z] <- local_peixes[x,y]
-      //mexer_peixes_posiX[z] <- x
-      //mexer_peixes_posiY[z] <- y
 
    fimse
 
@@ -1790,20 +1782,21 @@ inicio
       escreval ("                                    |  OPÇÃO  /      A L T E R A R      || Disponível: ||          Acrescentar as quantias possíveis de surgir          \  OPÇÃO  |   ")
       escreval ("                                    |  < 1 >  \  Q U A N T I D A D E S  ||     ",q_total:2,"      ||         determinados peixes no espaço atual do lago.          /  < 1 >  |   ")
       escreval
-      //",q_disponivel:2,"
+
       escreval
       escreval ("                                    |  OPÇÃO  /      A L T E R A R      || Disponível: ||            Acrescentar as possibilidades de surgir            \  OPÇÃO  |   ")
       escreval ("                                    |  < 2 >  \      C H A N C E S      ||     ",chances:3,"     ||         determinados peixes no espaço atual do lago.          /  < 2 >  |   ")
       escreval
-      //",c_disponivel:3,"
+
       escreval
       escreval ("                                    |  OPÇÃO  /      R E S E T A R      || Disponível: ||           Resetar quantidades e chances ao possível           \  OPÇÃO  |   ")
       escreval ("                                    |  < 3 >  \ M O D I F I C A Ç Õ E S ||   SEMPRE    ||                 mantendo o mínimo obrigatório                 /  < 3 >  |   ")
       escreval
-      ////////
+
       escreval
       escreval
       escreva("                                                                            D I G I T E   A Q U I   S U A   O P Ç Ã O: ")
+
       leia(op)
       se (op = "3") entao
          q_total <- q_total + q_tipalinha_b
@@ -2135,7 +2128,7 @@ q_abislapia <- 0
 
 grana <- 0
 
-grana <-  100000 // 0 //
+grana <- 0
 bonus_q <- 0
 meta_atual <- 1
 
